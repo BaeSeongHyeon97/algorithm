@@ -1,8 +1,11 @@
 # 더하기_4
 
+# 다시 
+
+
 while True:
-    A, B = map(int,input().split())
-    if A < 0 or B > 10:
-        break
-    else:
+    try:
+        A, B = map(int,input().split())
         print(A + B)
+    except:
+        break
