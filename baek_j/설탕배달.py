@@ -21,3 +21,4 @@ while N != 0:
 
 print(cout)
 
+
