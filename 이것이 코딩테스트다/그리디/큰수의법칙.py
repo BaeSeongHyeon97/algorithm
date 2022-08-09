@@ -8,7 +8,7 @@
 n, m, k = map(int,input().split())
 nums = list(map(int,input().split()))
 
-버블 정렬 / sort대신
+# 버블 정렬 / sort대신
 for i in range(n-1, -1, -1):
     for j in range(i):
         if nums[j] > nums[j + 1]:
