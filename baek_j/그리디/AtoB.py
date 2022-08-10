@@ -7,15 +7,16 @@ A, B = map(int,input().split())
 cnt = 0
 while True:
     if B < A:
-        cnt= -1
+        cnt = -1
         break
 
-    elif B % 10 == 1:
-        B = B // 10
+    elif B % 10 == 1:     # 1의 자리가 1 이면
+        B = B // 10      # 10으로 나눈 몫을 하고
         cnt += 1 
         if B == A:
             cnt += 1
-            break           
+            break
+
     elif B % 2 == 0:
         B = B // 2
         cnt += 1 
@@ -26,4 +27,5 @@ while True:
     else:
         cnt = -1
         break
+
 print(cnt)
