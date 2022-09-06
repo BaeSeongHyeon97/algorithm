@@ -26,5 +26,6 @@ while True:
 print(ans1)
 # 최소공배수
 # 최대공약수로 나눈 몫들의 곱과 최대공약수의 곱
+# 최소공배수 = 두 자연수의 곱 / 최대공약수
 ans2 = ans1 * (orig1 // ans1) * (orig2 // ans1)
 print(ans2)
