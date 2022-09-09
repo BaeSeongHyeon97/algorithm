@@ -15,3 +15,22 @@ for n in nums:
 for i in ans:
     print(i)
 
+# 에라토스테네스의 채
+# 소수 저장 배열 1개
+# 방문 표시 배열 1개
+
+m, n = map(int, input().split())
+prime = [0] * 1000001
+check = [0] * 1000001
+for i in range(2, 1000001):
+    if check[i] == 0:
+        prime[i] = i
+        if i > n:
+            break
+        for j in range(i+i, 1000001, i):
+            check[j] = 1
+
+ans = prime[m:n+1]
+for a in ans:
+    if a:
+        print(a)
