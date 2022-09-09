@@ -20,5 +20,5 @@ cnt = 0
 i = 5
 while i < N:
     cnt += N // i
-    i *= i
+    i *= 5
 print(cnt)
